@@ -21,7 +21,8 @@ from django.conf.urls import url
 
 
 def root(request):
-    return HttpResponse('<a href="rango/">Go to Tango</a>')
+    return HttpResponse('<a href="rango/">Пример информационного сайта на Django</a><br>'
+                        '<a href="booktime/">Контейнер для интернет-магазина на Django</a><br>')
 
 
 def index(request):

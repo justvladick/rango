@@ -1,0 +1,46 @@
+[
+{
+  "model": "main.producttag",
+  "fields": {
+    "name": "glasses",
+    "slug": "glasses",
+    "description": "glasses",
+    "active": true
+  }
+},
+{
+  "model": "main.producttag",
+  "fields": {
+    "name": "some xssa",
+    "slug": "some-xssa",
+    "description": "sdsdxs",
+    "active": true
+  }
+},
+{
+  "model": "main.product",
+  "pk": 1,
+  "fields": {
+    "name": "Glasses fg-433",
+    "description": "dsdscf f r \r\nfe e ff",
+    "price": "52.36",
+    "slug": "glasses_fg-433",
+    "active": true,
+    "in_stock": true,
+    "date_updated": "2019-01-16T13:20:19.056Z",
+    "tags": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.productimage",
+  "pk": 2,
+  "fields": {
+    "product": 1,
+    "image": "product-images/31515905807_285dfa7ba1_k_xUhJXPu.jpg",
+    "thumbnail": "product-thumbnails/31515905807_285dfa7ba1_k_tErWYs0.jpg"
+  }
+}
+]

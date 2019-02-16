@@ -1,0 +1,20 @@
+
+
+    <ul class="nav nav-pills flex-column" id="tags">
+        {% if tags %}
+            {% for tag in tags %}
+                {% if tag == act_tag %}
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'booktime:products' tag.slug %}">{{ tag.name }}</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'booktime:products' tag.slug %}">{{ tag.name }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            <li class="nav-item"> <strong>There are no tags present.</strong></li>
+        {% endif %}
+    </ul>
+
