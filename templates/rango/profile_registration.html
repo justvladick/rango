@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load bootstrap4 %}
+{% block title_block %}
+    Registration - Step 2
+{% endblock %}
+    {% block sidebar_block %}
+    {% endblock %}
+
+{% block content %}
+    <h1>Registration - Step 2</h1>
+    <form method="post" action="." enctype="multipart/form-data">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <input class="btn btn-primary" type="submit" value="Submit" />
+    </form>
+{% endblock %}
