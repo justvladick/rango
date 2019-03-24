@@ -3,7 +3,7 @@
     <ul class="nav nav-pills flex-column" id="tags">
         {% if tags %}
             {% for tag in tags %}
-                {% if tag == act_tag %}
+                {% if tag.slug == act_tag %}
                     <li class="nav-item">
                         <a class="nav-link active" href="{% url 'booktime:products' tag.slug %}">{{ tag.name }}</a>
                     </li>

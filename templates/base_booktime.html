@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-{% load rango_template_tags %}
+{#{% load rango_template_tags %}#}
+{% load template_tags %}
 {% load staticfiles %} <!-- New line -->
 <html lang="en">
 <head>
@@ -102,7 +103,7 @@
 {##}
 {#                    </ul>#}
                     <div id="cats">
-                        {% get_tags_list category %}
+                        {% get_tags_list tag %}
                     </div>
                 {% endblock sidebar_block %}
             </nav>

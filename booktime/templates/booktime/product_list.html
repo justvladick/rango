@@ -1,6 +1,6 @@
 {% extends "base_booktime.html" %}
 {% block content %}
-    <h1>products</h1>
+    <h1>{{ tag }}</h1>
     {% for product in page_obj %}
         <p>{{ product.name }}</p>
         <p>
