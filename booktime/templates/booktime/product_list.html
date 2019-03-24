@@ -3,6 +3,11 @@
     <h1>{{ tag }}</h1>
     {% for product in page_obj %}
         <p>{{ product.name }}</p>
+        {% for image in product.productimage_set.all %}
+            {% if forloop.first %}
+                <p><img src="{{ image.thumbnail.url|safe }}"></p>
+            {% endif %}
+        {% endfor %}
         <p>
             <a href="{% url "booktime:product" product.slug %}">See it here</a>
         </p>
